@@ -1,0 +1,79 @@
+
+
+
+@import url(./helvetica.css);
+
+
+
+body {
+  margin: 40px;
+  color:#000;
+}
+
+
+
+.sidebar {
+    grid-area: sidebar;
+  font-family: HelveticaLT-Narrow, "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: normal;
+  margin: 0;
+  }
+ 
+
+  .content {
+    grid-area: content;
+    display:flex;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+ 
+
+
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+.mainNav{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+
+.header,
+.footer {
+  background-color: transparent;
+}
+
+
+
+@media only screen and (max-width:600px)
+{
+ 
+}
