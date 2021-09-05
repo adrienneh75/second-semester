@@ -3,80 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
-
+    <title>Some Product</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body class="product">
     <header class="mainNav">
-        <h1>hello this is a branch</h1>
-        <nav>
-          <a href="productlist.html"> <span> Product</span> <span>list</span></a>
-          <a href="category.html">category</a>
-          <a href="product.html">Products</a>
-        </nav>
-      </header>
-      <button>clickme</button>
-      
-      <div class="box sidebar">
-        <ul>
-            <li><a href="">Shop</a>
-              <ul class="categories">
-                
-                <li class="newArrivals"><a href="/collections/new-arrivals">NEW ARRIVALS</a></li>
-                
-                
-                <li class=""><a href="/collections/jeans">Jeans</a></li>
-                
-                <li><a href="/collections/tops">Tops</a></li>
-                
-                <li><a href="/collections/knitwear">Knitwear</a></li>
-                
-                <li><a href="/collections/pants">Pants</a></li>
-                
-                <li><a href="/collections/skirts">Skirts</a></li>
-                
-                <li><a href="/collections/dresses">Dresses</a></li>
-                
-                <li><a href="/collections/outerwear">Outerwear</a></li>
-                
-                <li><a href="/collections/accessories">ACCESSORIES</a></li>
-                
-               
-                <li><a href="/collections/sale-items">Sale</a></li>
-                
-              </ul>
-            </li>
-
-          </ul>
-
-    </div>
+      <h1>sports<span>LAB</span></h1>
+      <nav>
+        <a href="category.html">Categories</a>
+        <a href="product.html">Product</a>
+        <a href="productlist.html">Product List</a>
+      </nav>
+    </header>
     <main>
-        <div class="box content"> 
-
-            <article class="">
-
-                <img
-                  src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                  alt="Blue T20"
-                />
-                <h1></h1>
-                <h2></h2>
-        
- 
-    
-    
-      
-    
-    
-    
-              <!------- <a href="product.html">Read More</a>--->
-    
-        </article>
-
-       </main>
-       <script src="product.js"></script>
-       <script src="myjs.js"></script>
-        </body>
+      <ol class="breadcrumbs">
+        <li><a href="index.html">home</a></li>
+        <li><a href="category.html">Seasons</a></li>
+        <li class="brand"><a href="productlist.html">Nike </a></li>
+        <li class="productname">Sahara Team India Fanwear Round Neck Jersey</li>
+      </ol>
+      <img
+      class="productimage"
+        src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+        alt="Sahara Team India Fanwear Round Neck Jersey"
+      />
+      <section class="purchaseBox">
+        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+        <p>Nike | Tshirts</p>
+        <form>
+          <label
+            >Choose a size
+            <select name="size">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+          <button>Add to basket</button>
+        </form>
+      </section>
+      <section class="info">
+        <h2>Product Information</h2>
+        <dl>
+          <dt>Model name</dt>
+          <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
+          <dt>Color</dt>
+          <dd>Blue</dd>
+          <dt>Inventory number</dt>
+          <dd>1163</dd>
+        </dl>
+        <h1>Nike</h1>
+        <p>Nike, creating experiences for today’s athlete</p>
+      </section>
+    </main>
+    <script src="product.js"></script>
+  </body>
+  
 </html>

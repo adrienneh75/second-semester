@@ -1,31 +1,19 @@
 
 
 
-@import url(./helvetica.css);
-
-
-
-body {
-  margin: 40px;
-  color:#000;
-}
-
-
-
-.sidebar {
+ /* .sidebar {
     grid-area: sidebar;
   font-family: HelveticaLT-Narrow, "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 12px;
+ font-size: 12px;
   line-height: 24px;
   letter-spacing: 1px;
   color: black;
   font-weight: normal;
   margin: 0;
   }
- 
-
-  .content {
+  
+   .content {
     grid-area: content;
     display:flex;
     flex-wrap: wrap;
@@ -34,9 +22,76 @@ body {
     border-radius: 5px;
     padding: 10px;
     max-width: 100%;
- 
+  }
 
 
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+  */
+
+  /*product list.html  */
+
+  img{
+    max-width: 100%;
+  }
+
+  .subtle{
+color: ivory;
+  }
+
+.productlist main{
+display: grid;
+grid-template-columns: repeat( auto-fill, minmax(50px));
+
+}
+
+.productlist article.soldOut img{
+  opacity: 0.5;
+
+}
+
+.productlist article.soldOut::before{
+content: "Sold Out";
+position: absolute;
+background: var(--color);
+color: var(--background-color);
+padding: 1rem;
+
+}
+
+.productlist article .discounted,
+.productlist article .price span{
+  display: none;
+}
+
+.productlist article .onSale. .discounted{
+  display: flex;
+  justify-content: space-between;
+}
+
+.productlist article.onSale .price span{
+  display: initial;
+}
+
+
+
+  /* code from previous code 
+  
+  
+   body {
+  margin: 40px;
+    color:#000;
+    background-color:rgb(252, 223, 223);
   }
 
   .header {
@@ -52,19 +107,6 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 }
-  .wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 120px 120px 120px;
-    grid-template-areas:
-    "header header header"
-    "sidebar content content"
-    "footer  footer  footer";
-    background-color: #fff;
-    color: #444;
-  }
-
-
 
 .header,
 .footer {
@@ -72,8 +114,30 @@ align-items: flex-start;
 }
 
 
-
 @media only screen and (max-width:600px)
 {
  
 }
+*/
+
+
+
+/*:root {
+  --main-color: hotpink;
+  --secondary-color: lightblue;
+  --header-font: fantasy;
+  --body-font: cursive;
+}
+
+body {
+  background: var(--main-color);
+  font-family: var(--body-font);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--body-font);
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+*/
