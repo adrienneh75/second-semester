@@ -8,12 +8,19 @@ function gotData(data)
     console.log(data);
     data.forEach(showSeasons)
 }
+
+
+
+//loop through
 function showSeasons(seasons){
     const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
-}
 
-//loop through
+    const topParent = document.querySelector("#seasons");
+    const elemParent = topParent.querySelector("img");
+    elemParent.appendChild(copy);
+
+}
 
 //grab template, clone, grab parent, append
 
