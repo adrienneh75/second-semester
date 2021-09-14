@@ -5,3 +5,6 @@
 /* make responsive , spacing, padding margins*/
 
 /*  branch for each section and merge */
+ {
+  box-sizing: border-box;
+}
